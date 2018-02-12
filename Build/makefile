@@ -1,12 +1,7 @@
-################################################################################
-# Automatically-generated file. Do not edit!
-################################################################################
-
 -include ../makefile.init
 
 RM := rm -rf
 
-# All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir.mk
 -include objects.mk
@@ -34,12 +29,8 @@ endif
 
 -include ../makefile.defs
 
-# Add inputs and outputs from these tool invocations to the build variables 
-
-# All Target
 all: libSQLiteManager.so
 
-# Tool invocations
 libSQLiteManager.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
@@ -47,7 +38,6 @@ libSQLiteManager.so: $(OBJS) $(USER_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-# Other Targets
 clean:
 	-$(RM) $(LIBRARIES)$(CC_DEPS)$(C++_DEPS)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) libSQLiteManager.so
 	-@echo ' '
