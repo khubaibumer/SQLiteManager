@@ -1,7 +1,3 @@
-################################################################################
-# Automatically-generated file. Do not edit!
-################################################################################
-
 C_UPPER_SRCS := 
 CXX_SRCS := 
 C++_SRCS := 
@@ -21,7 +17,6 @@ OBJS :=
 CPP_DEPS := 
 C_DEPS := 
 
-# Every subdirectory with source files must be described here
 SUBDIRS := \
 . \
 
