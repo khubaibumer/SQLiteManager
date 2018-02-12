@@ -1,7 +1,7 @@
 /*
  * SqliteDML.cpp
  *
- *  Created on: Feb 8, 2018
+ *  Created on: Feb 10, 2018
  *      Author: khubaib
  */
 
@@ -26,7 +26,6 @@ SqliteDML::~SqliteDML() {
 int sql_handler(void*, int entry_count, char** args, char** cols) {
 	for (int i = 0; i < entry_count; i++) {
 		cout << cols[i] << ":\t" << args[i] << endl;
-		//printf("%s = %s\n", cols[i], args[i] ? args[i] : "NULL");
 	}
 	return 0;
 }
@@ -102,10 +101,6 @@ void SqliteDML::conditionalDisplayTable(std::string attrib_name,
 }
 
 void SqliteDML::displayTable(std::string attrib_name, std::string table_name) {
-
-//	m_ret_val = sqlite3_open("testDB", &m_db_handle);
-//	if (m_ret_val)
-//		exit (EXIT_FAILURE),perror("Cannot open database");
 
 	m_sql_cmd.clear();
 	m_sql_cmd += "select ";
